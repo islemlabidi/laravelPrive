@@ -20,4 +20,9 @@ class Admin extends Model
      * @var string
      */
     protected $primaryKey = 'id_admin';
+    
+    public function Profs()
+    {
+        return $this->hasMany('App\Prof');
+    }
 }

@@ -8,4 +8,10 @@ class Absence extends Model
 {
     //
     public $timestamps = false;
+
+
+    public function Seances()
+    {
+        return $this->hasMany('App\Seance');
+    }
 }
